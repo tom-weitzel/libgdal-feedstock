@@ -17,7 +17,7 @@ source:
     - multiprocessor.patch
 
 build:
-  number: 6
+  number: 5
   skip: True  # [win and py36]
   features:
     - vc9  # [win and py27]
@@ -28,7 +28,6 @@ requirements:
     - python  # [win]
     - cmake  # [win]
     - curl >=7.54.1,<8
-    - boost-cpp 1.65.1
     - expat 2.1.*
     - freexl
     - geos 3.6.2
@@ -51,7 +50,6 @@ requirements:
     - sqlite 3.13.*
     - xerces-c
     - zlib 1.2.11  # [not win]
-    - geotiff
     - xz 5.2.*
     - vc 9  # [win and py27]
     - vc 14  # [win and (py35 or py36)]
@@ -79,7 +77,6 @@ requirements:
     - sqlite 3.13.*
     - xerces-c
     - zlib 1.2.11  # [not win]
-    - geotiff
     - xz 5.2.*
     - vc 9  # [win and py27]
     - vc 14  # [win and (py35 or py36)]
