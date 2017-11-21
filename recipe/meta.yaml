@@ -28,7 +28,8 @@ requirements:
     - python  # [win]
     - cmake  # [win]
     - curl >=7.54.1,<8
-    - boost-cpp 1.65.1
+    # boost needed for KML
+    - boost-cpp 1.65.1  # [not win]
     - expat 2.1.*
     - freexl
     - geos 3.6.2
