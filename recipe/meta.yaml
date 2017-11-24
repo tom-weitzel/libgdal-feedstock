@@ -17,7 +17,7 @@ source:
     - multiprocessor.patch
 
 build:
-  number: 6
+  number: 7
   skip: True  # [win and py36]
   features:
     - vc9  # [win and py27]
@@ -42,11 +42,11 @@ requirements:
     - libdap4 3.18.*  # [not win]
     - libkml 1.3.0  # [not win]
     - libnetcdf 4.4.*
-    - libpng >=1.6.28,<1.7
+    - libpng >=1.6.22,<1.6.31
     - libspatialite
     - libtiff >=4.0.6,<4.0.8
     - openjpeg 2.1.0
-    - poppler  # [not win]
+    - poppler 0.61.*  # [not win]
     - postgresql
     - proj4 4.9.3
     - sqlite 3.13.*
@@ -70,12 +70,12 @@ requirements:
     - libdap4 3.18.*  # [not win]
     - libkml 1.3.0  # [not win]
     - libnetcdf 4.4.*
-    - libpng >=1.6.28,<1.7
+    - libpng >=1.6.22,<1.6.31
     - libpq
     - libspatialite
     - libtiff >=4.0.6,<4.0.8
     - openjpeg  >=2.1,<=2.3.0
-    - poppler  # [not win]
+    - poppler 0.61.*  # [not win]
     - proj4 4.9.3
     - sqlite 3.13.*
     - xerces-c
