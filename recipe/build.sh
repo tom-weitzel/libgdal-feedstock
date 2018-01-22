@@ -75,7 +75,6 @@ export CPPFLAGS="$CPPFLAGS -I$PREFIX/include"
             --with-liblzma=yes \
             --with-netcdf=$PREFIX \
             --with-openjpeg=$PREFIX \
-            --with-poppler=$PREFIX \
             --with-pcre \
             --with-pg=$PREFIX/bin/pg_config \
             --with-png=$PREFIX \
