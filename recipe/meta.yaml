@@ -17,7 +17,7 @@ source:
     - multiprocessor.patch
 
 build:
-  number: 8
+  number: 9
   skip: True  # [win and py36]
   features:
     - vc9  # [win and py27]
@@ -25,12 +25,11 @@ build:
 
 requirements:
   build:
+    - pcre 8.39
     - python  # [win]
     - cmake  # [win]
-    - curl >=7.54.1,<8
-    # boost needed for KML
-    - boost-cpp 1.65.1  # [not win]
-    - expat 2.1.*
+    - curl >=7.44.0,<8
+    - expat 2.2.*
     - freexl
     - geos 3.6.2
     - giflib 5.1.*  # [not win]
@@ -40,16 +39,14 @@ requirements:
     - json-c  # [not win]
     - kealib 1.4.7
     - libdap4 3.18.*  # [not win]
-    - libkml 1.3.0  # [not win]
     - libnetcdf 4.4.*
-    - libpng >=1.6.22,<1.6.31
+    - libpng >=1.6.32,<1.6.35
     - libspatialite
-    - libtiff >=4.0.6,<4.0.8
+    - libtiff >=4.0.8,<4.0.10
     - openjpeg 2.1.0
-    - poppler 0.61.*  # [not win]
     - postgresql
     - proj4 4.9.3
-    - sqlite 3.13.*
+    - sqlite 3.20.*
     - xerces-c 3.2.0
     - zlib 1.2.11  # [not win]
     - geotiff
@@ -57,8 +54,9 @@ requirements:
     - vc 9  # [win and py27]
     - vc 14  # [win and (py35 or py36)]
   run:
-    - curl >=7.54.1,<8
-    - expat 2.1.*
+    - pcre 8.39
+    - curl >=7.44.1,<8
+    - expat 2.2.*
     - freexl
     - geos 3.6.2
     - giflib 5.1.*  # [not win]
@@ -68,16 +66,14 @@ requirements:
     - json-c  # [not win]
     - kealib 1.4.7
     - libdap4 3.18.*  # [not win]
-    - libkml 1.3.0  # [not win]
     - libnetcdf 4.4.*
-    - libpng >=1.6.22,<1.6.31
+    - libpng >=1.6.32,<1.6.35
     - libpq
     - libspatialite
-    - libtiff >=4.0.6,<4.0.8
+    - libtiff >=4.0.8,<4.0.10
     - openjpeg  >=2.1,<=2.3.0
-    - poppler 0.61.*  # [not win]
     - proj4 4.9.3
-    - sqlite 3.13.*
+    - sqlite 3.20.*
     - xerces-c 3.2.0
     - zlib 1.2.11  # [not win]
     - geotiff
