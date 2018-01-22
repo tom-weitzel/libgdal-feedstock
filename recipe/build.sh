@@ -70,7 +70,6 @@ export CPPFLAGS="$CPPFLAGS -I$PREFIX/include"
             --with-kea=$PREFIX/bin/kea-config \
             --with-libjson-c=$PREFIX \
             --with-libz=$PREFIX \
-            --with-libkml=$PREFIX \
             --with-libtiff=$PREFIX \
             --with-geotiff=$PREFIX \
             --with-liblzma=yes \
