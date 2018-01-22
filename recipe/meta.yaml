@@ -25,6 +25,7 @@ build:
 
 requirements:
   build:
+    - pcre 8.39
     - python  # [win]
     - cmake  # [win]
     - curl >=7.44.0,<8
@@ -53,6 +54,7 @@ requirements:
     - vc 9  # [win and py27]
     - vc 14  # [win and (py35 or py36)]
   run:
+    - pcre 8.39
     - curl >=7.44.1,<8
     - expat 2.2.*
     - freexl
