@@ -53,6 +53,10 @@ fi
 export LDFLAGS="$LDFLAGS -L$PREFIX/lib"
 export CPPFLAGS="$CPPFLAGS -I$PREFIX/include"
 
+# sudo bash -c "echo '$PREFIX/lib' >> /etc/ld.so.conf"
+# cat /etc/ld.so.conf
+# sudo ldconfig
+
 # `--without-pam` was removed.
 # See https://github.com/conda-forge/gdal-feedstock/pull/47 for the discussion.
 
@@ -86,6 +90,7 @@ export CPPFLAGS="$CPPFLAGS -I$PREFIX/include"
             --with-static-proj4=$PREFIX \
             --with-xerces=$PREFIX \
             --with-xml2=$PREFIX \
+            --with-fgdb=$PREFIX \
             --without-python \
             $OPTS
 

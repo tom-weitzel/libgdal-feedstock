@@ -55,6 +55,7 @@ requirements:
     - xz 5.2.*
     - vc 9  # [win and py27]
     - vc 14  # [win and (py35 or py36)]
+    - libesrifgdb
   run:
     - boost 1.66.0  # only need to get conda-forge's libkml instead of defaults
     - curl >=7.54.1,<8
@@ -84,6 +85,7 @@ requirements:
     - xz 5.2.*
     - vc 9  # [win and py27]
     - vc 14  # [win and (py35 or py36)]
+    - libesrifgdb
 
 test:
   files:
@@ -96,6 +98,7 @@ test:
     - gdalenhance --version
     - gdalwarp --version
     - gdalinfo --formats
+    - ogrinfo --formats
     - gdalinfo http://thredds.nersc.no/thredds/dodsC/greenpath/Model/topaz  # [not win]
     - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
     - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
